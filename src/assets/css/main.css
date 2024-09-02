@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .panel-btn{
+        @apply border-2 border-secondary rounded-lg text-secondary p-1 w-10 hover:bg-secondary hover:text-dark-100 transition-colors;
+    }
+    .panel-btn--active{
+        @apply bg-secondary text-dark-100
+    }
+    .panel-page{
+        @apply h-full w-0 hidden invisible px-3;
+    }
+    .panel-page--active{
+        @apply w-60 flex visible;
+    }
+}

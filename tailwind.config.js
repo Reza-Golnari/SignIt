@@ -15,6 +15,9 @@ module.exports = {
         },
       }
     },
+    fontFamily:{
+      roboto: "Roboto"
+    }
   },
   plugins: [
     function ({ addVariant }) {
