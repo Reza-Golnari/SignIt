@@ -582,12 +582,11 @@ video {
   height: 100%;
   overflow: hidden;
   width: 0;
-  transition: width 150ms linear;
 }
 
 .panel-page--active{
   display: flex;
-  width: 200px;
+  animation: open 150ms linear forwards;
 }
 
 .panel-page > div{
@@ -638,6 +637,10 @@ video {
   gap: 0.75rem;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .bg-dark-100{
   --tw-bg-opacity: 1;
   background-color: rgb(53 59 72 / var(--tw-bg-opacity));
@@ -648,8 +651,23 @@ video {
   background-color: rgb(46 204 113 / var(--tw-bg-opacity));
 }
 
+.bg-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 188 156 / var(--tw-bg-opacity));
+}
+
 .p-3{
   padding: 0.75rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .font-roboto{
@@ -663,6 +681,11 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 input{
@@ -689,6 +712,12 @@ input[type="color"]{
   padding-bottom: 0px;
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@keyframes open {
+  to{
+    width: 200px;
+  }
 }
 
 .child\:h-full > *{

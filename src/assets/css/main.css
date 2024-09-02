@@ -14,11 +14,10 @@
     .panel-page{
         @apply h-full hidden overflow-hidden;
         width: 0;
-        transition: width 150ms linear;
     }
     .panel-page--active{
         @apply flex;
-        width: 200px;
+        animation: open 150ms linear forwards;
     }
     .panel-page > div {
         @apply flex flex-col gap-3 px-3 text-white w-full;
@@ -31,4 +30,10 @@ input{
 
 input[type="color"]{
     @apply bg-dark-100 outline-none border rounded-lg px-1 py-0;
+}
+
+@keyframes open {
+    to{
+        width: 200px;
+    }
 }

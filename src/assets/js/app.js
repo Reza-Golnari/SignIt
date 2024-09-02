@@ -13,11 +13,18 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     })
 
     const colorInput = document.querySelector("input[type='color']");
-    const sizeInput = document.querySelector("input[type='number']");
+    const sizeInput = document.querySelector("#size");
+    const radiusInput = document.querySelector("#radius");
+
     let color = "#ffffff";
     let size = 4;
+    let radius = 4;
+
     colorInput.value = color;
     sizeInput.value = size;
+    radiusInput.value = radius;
+
     colorInput.addEventListener("input" , e => color = e.target.value);
     sizeInput.addEventListener("input" , e => size = e.target.value);
+    radiusInput.addEventListener("input" , e => radius = e.target.value);
 })
