@@ -13,6 +13,11 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     })
 
     const colorInput = document.querySelector("input[type='color']");
+    const sizeInput = document.querySelector("input[type='number']");
     let color = "#ffffff";
+    let size = 4;
+    colorInput.value = color;
+    sizeInput.value = size;
     colorInput.addEventListener("input" , e => color = e.target.value);
+    sizeInput.addEventListener("input" , e => size = e.target.value);
 })

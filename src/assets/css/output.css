@@ -578,6 +578,7 @@ video {
 }
 
 .panel-page{
+  display: none;
   height: 100%;
   overflow: hidden;
   width: 0;
@@ -598,6 +599,10 @@ video {
   padding-right: 0.75rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.relative{
+  position: relative;
 }
 
 .flex{
@@ -658,6 +663,32 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+input{
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 59 72 / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+input[type="color"]{
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 59 72 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .child\:h-full > *{

@@ -12,7 +12,7 @@
         @apply bg-secondary text-dark-100
     }
     .panel-page{
-        @apply h-full overflow-hidden;
+        @apply h-full hidden overflow-hidden;
         width: 0;
         transition: width 150ms linear;
     }
@@ -23,4 +23,12 @@
     .panel-page > div {
         @apply flex flex-col gap-3 px-3 text-white w-full;
     }
+}
+
+input{
+    @apply bg-dark-100 outline-none border rounded-lg py-1 px-3;
+}
+
+input[type="color"]{
+    @apply bg-dark-100 outline-none border rounded-lg px-1 py-0;
 }
