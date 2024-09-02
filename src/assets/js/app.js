@@ -58,4 +58,16 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     clrBtn.addEventListener("click" , () => {
         ctx.clearRect(0 , 0 , canvas.clientWidth , canvas.clientHeight)
     })
+
+    const saveBtn = document.querySelector("#save");
+    saveBtn.addEventListener('click' , ()=> {
+        isDrawing = false;
+        const link = document.createElement("a");
+        const url = canvas.toDataURL("image/png")
+        link.href = url;
+        link.download = "image";
+        document.body.appendChild(link)
+        link.click()
+        link.remove()
+    })
 })
