@@ -636,6 +636,10 @@ video {
   flex-direction: column;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -661,6 +665,11 @@ video {
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(26 188 156 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-3{
