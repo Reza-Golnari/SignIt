@@ -2,7 +2,23 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        primary: "#34495e",
+        secondary: "#1abc9c",
+        yellow: "#f1c40f",
+        green: "#2ecc71",
+        dark: {
+          100: "#353b48",
+          200: "#2f3640"
+        },
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    }
+  ],
 }

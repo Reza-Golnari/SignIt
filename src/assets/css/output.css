@@ -553,3 +553,33 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.bg-dark-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 59 72 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 188 156 / var(--tw-bg-opacity));
+}
