@@ -12,9 +12,15 @@
         @apply bg-secondary text-dark-100
     }
     .panel-page{
-        @apply h-full w-0 hidden invisible px-3;
+        @apply h-full overflow-hidden;
+        width: 0;
+        transition: width 150ms linear;
     }
     .panel-page--active{
-        @apply w-60 flex visible;
+        @apply flex;
+        width: 200px;
+    }
+    .panel-page > div {
+        @apply flex flex-col gap-3 px-3 text-white w-full;
     }
 }

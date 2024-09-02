@@ -10,3 +10,5 @@ btnPnlsLst.forEach(btn => {
         if(activePnl && activePnl !== targetPage) activePnl.classList.remove('panel-page--active')
     })
 })
+
+document.querySelector('input').addEventListener("input" , e => console.log(e))

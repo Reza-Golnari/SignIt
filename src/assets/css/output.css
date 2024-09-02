@@ -578,18 +578,26 @@ video {
 }
 
 .panel-page{
-  visibility: hidden;
-  display: none;
   height: 100%;
-  width: 0px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  overflow: hidden;
+  width: 0;
+  transition: width 150ms linear;
 }
 
 .panel-page--active{
-  visibility: visible;
   display: flex;
-  width: 15rem;
+  width: 200px;
+}
+
+.panel-page > div{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .flex{
@@ -617,6 +625,10 @@ video {
   flex-direction: column;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -637,6 +649,15 @@ video {
 
 .font-roboto{
   font-family: Roboto;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .child\:h-full > *{
