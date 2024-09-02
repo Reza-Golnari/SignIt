@@ -53,4 +53,9 @@ window.addEventListener("DOMContentLoaded" , ()=> {
         ctx.lineTo(e.offsetX, e.offsetY);
         ctx.stroke();
     })
+
+    const clrBtn = document.querySelector("#clear");
+    clrBtn.addEventListener("click" , () => {
+        ctx.clearRect(0 , 0 , canvas.clientWidth , canvas.clientHeight)
+    })
 })
