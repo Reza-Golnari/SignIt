@@ -577,6 +577,13 @@ video {
   color: rgb(53 59 72 / var(--tw-text-opacity));
 }
 
+.panel-btn--active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 188 156 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(53 59 72 / var(--tw-text-opacity));
+}
+
 .panel-page{
   display: none;
   height: 100%;
