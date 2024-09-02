@@ -611,6 +611,14 @@ video {
   position: relative;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
 .flex{
   display: flex;
 }

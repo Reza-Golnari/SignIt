@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     const radiusInput = document.querySelector("#radius");
 
     let color = "#000000";
-    let size = 4;
+    let size = 2;
     let radius = 4;
 
     colorInput.value = color;
@@ -35,27 +35,22 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     const ctx = canvas.getContext("2d");
     let isDrawing = false;
 
-    canvas.width = window.innerWidth / 3;
-    canvas.height = window.innerHeight / 2;
+    canvas.width = 700;
+    canvas.height = 600;
 
-    canvas.addEventListener('mouseup' , () => {
+    window.addEventListener('mouseup' , () => {
         isDrawing = false;
         ctx.beginPath();
     })
-    canvas.addEventListener('mousedown' , () => isDrawing = true)
+    window.addEventListener('mousedown' , () => isDrawing = true)
     canvas.addEventListener("mousemove" , e => {
         if(!isDrawing) return;
 
-        ctx.lineWidth = 2;
+        ctx.lineWidth = size;
         ctx.lineCap = 'round';
-        ctx.strokeStyle = '#000000';
+        ctx.strokeStyle = color;
 
-        console.log(e.clientX , e.clientY)
-        console.log(canvas.offsetLeft , canvas.offsetTop)
-
-        ctx.lineTo(e.offsetX - canvas.offsetLeft , e.offsetY - canvas.offsetTop);
+        ctx.lineTo(e.offsetX, e.offsetY);
         ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(e.offsetX - canvas.offsetLeft , e.offsetY - canvas.offsetTop);
     })
 })
