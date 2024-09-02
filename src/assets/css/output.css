@@ -586,6 +586,12 @@ video {
   padding-right: 0.75rem;
 }
 
+.panel-page--active{
+  visibility: visible;
+  display: flex;
+  width: 15rem;
+}
+
 .flex{
   display: flex;
 }
