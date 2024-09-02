@@ -562,6 +562,10 @@ video {
   grid-column: span 3 / span 3;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
@@ -570,8 +574,91 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.min-w-24 {
+  min-width: 6rem;
+}
+
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-stretch {
+  justify-content: stretch;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(26 188 156 / var(--tw-border-opacity));
+}
+
+.border-r-dark-300 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(30 39 46 / var(--tw-border-opacity));
 }
 
 .bg-dark-100 {
@@ -579,7 +666,50 @@ video {
   background-color: rgb(53 59 72 / var(--tw-bg-opacity));
 }
 
-.bg-secondary {
+.bg-green {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 188 156 / var(--tw-bg-opacity));
+  background-color: rgb(46 204 113 / var(--tw-bg-opacity));
+}
+
+.fill-secondary {
+  fill: #1abc9c;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(26 188 156 / var(--tw-text-opacity));
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.child\:h-full > * {
+  height: 100%;
+}
+
+.child\:fill-secondary > * {
+  fill: #1abc9c;
+}
+
+.child\:stroke-red-500 > * {
+  stroke: #ef4444;
+}
+
+.child\:p-3 > * {
+  padding: 0.75rem;
 }
