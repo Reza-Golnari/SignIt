@@ -19,8 +19,8 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     const sizeInput = document.querySelector("#size");
     const radiusInput = document.querySelector("#radius");
 
-    let color = "#000000";
-    let size = 2;
+    let color = "#dc185d";
+    let size = 1;
     let radius = 4;
 
     colorInput.value = color;
@@ -35,8 +35,8 @@ window.addEventListener("DOMContentLoaded" , ()=> {
     const ctx = canvas.getContext("2d");
     let isDrawing = false;
 
-    canvas.width = 700;
-    canvas.height = 600;
+    canvas.width = 5000;
+    canvas.height = 5000;
 
     window.addEventListener('mouseup' , () => {
         isDrawing = false;

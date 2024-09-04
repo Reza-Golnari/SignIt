@@ -22,14 +22,13 @@
     .panel-page > div {
         @apply flex flex-col gap-3 px-3 text-white w-full;
     }
-}
-
-input{
-    @apply bg-dark-100 outline-none border rounded-lg py-1 px-3;
+    .anime_hover {
+        @apply transition-all duration-300 delay-75 ease-in-out;
+    }
 }
 
 input[type="color"]{
-    @apply bg-dark-100 outline-none border rounded-lg px-1 py-0;
+    @apply outline-none rounded-lg;
 }
 
 @keyframes open {
